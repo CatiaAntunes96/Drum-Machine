@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="drum-machine">
+      <div id="display">
+        <button className="drum-pad">Q</button> /*id have not be set yet */
+        <button className="drum-pad">W</button>
+        <button className="drum-pad">E</button>
+        <button className="drum-pad">A</button>
+        <button className="drum-pad">S</button>
+        <button className="drum-pad">D</button>
+        <button className="drum-pad">Z</button>
+        <button className="drum-pad">X</button>
+        <button className="drum-pad">C</button>
+      </div>
     </div>
   );
 }
