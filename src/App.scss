@@ -1,0 +1,20 @@
+#display {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.second-row {
+  @extend .first-row;
+  margin-top: 30px;
+}
+
+.drum-pad {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+}
