@@ -1,0 +1,18 @@
+#drum-machine {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px;
+}
+
+
+.drum-pad {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  margin: 5px;
+}
