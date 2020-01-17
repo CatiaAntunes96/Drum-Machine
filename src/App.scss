@@ -1,20 +1,18 @@
-#display {
+#drum-machine {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 
-.first-row {
-  display: flex;
-  justify-content: space-evenly;
+.container {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px;
 }
 
-.second-row {
-  @extend .first-row;
-  margin-top: 30px;
-}
 
 .drum-pad {
   width: 40px;
   height: 40px;
   background-color: red;
+  margin: 5px;
 }
