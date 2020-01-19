@@ -26,6 +26,8 @@ const Drum = ({soundDescription, innerText, soundSrc}) => {
         return pressed;
     }
     const keyPressed = useKey(innerText);
+
+   
     
     const playAudio = (e) => {
         let clickedElement = e.target.innerText;
