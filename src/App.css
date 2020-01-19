@@ -1,14 +1,18 @@
 body {
   margin: 0px;
   height: 100vh;
-  background-image: url("metal.jpg");
+  background-color: #838686;
+  background-image: linear-gradient(19deg, #838686 31%, #e6e5eb 100%);
   background-repeat: repeat;
+  font-family: 'Alata', sans-serif;
 }
 
 h1 {
   text-align: center;
   font-size: 40px;
   text-shadow: 4px 0px 5px #83ed76;
+  background-color: #80808091;
+  border-radius: 4px;
 }
 
 #drum-machine {
@@ -45,7 +49,6 @@ h1 {
   background-color: antiquewhite;
   padding: 5px 20px;
   text-align: center;
-  font-family: 'Alata', sans-serif;
   border-bottom: 4px solid #29c92fd4;
   border-top: 4px solid #29c92fd4;
   border-radius: 2px;
@@ -79,13 +82,16 @@ h1 {
   }
 }
 
-@media screen and (device-width: 320px) and (device-height: 640px) {
+@media screen and (min-width: 320px) and (min-height: 640px) {
   #drum-machine {
     margin: 0%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  h1 {
+    margin: 5% 0%;
   }
   .parent_container {
     -webkit-box-orient: vertical;
@@ -94,8 +100,11 @@ h1 {
             flex-direction: column;
   }
   .box {
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 2px 5px;
+  }
+  p {
+    margin: 0px;
   }
   .container {
     -webkit-box-align: center;
