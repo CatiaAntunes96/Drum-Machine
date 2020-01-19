@@ -39,8 +39,8 @@ const Drum = ({soundDescription, innerText, soundSrc}) => {
     return (
      <div className="drum-pad" id={soundDescription} onClick={playAudio}>
         {innerText}
-        <audio className="clip" id={innerText} >
-        <source src={soundSrc} type="audio/wav" />
+        <audio className="clip" id={innerText} src={soundSrc} type="audio/wav">
+        
         </audio>
         {keyPressed}
     </div>
