@@ -2,8 +2,7 @@ body {
   margin: 0px;
   height: 100vh;
   background-image: url("metal.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 h1 {
