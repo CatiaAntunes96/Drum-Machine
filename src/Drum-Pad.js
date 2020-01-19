@@ -15,8 +15,12 @@ function DrumPad() {
 ]
 
     return (
-        <div>
-        <h4 id="display">{drumsArray.soundDescription}</h4>
+        <div className="parent_container">
+        <div className="box">
+            <p style={{fontWeight: "bold"}}>Sound Playing:</p>
+            <p id="display">{drumsArray.soundDescription}</p>
+        </div>
+        
         <div className="container">
             {
                 drumsArray.map(d => (<Drum key = {d.soundDescription}  {...d} />) )
