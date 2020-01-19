@@ -82,7 +82,7 @@ h1 {
   }
 }
 
-@media screen and (min-width: 320px) and (min-height: 640px) {
+@media screen and (min-width: 320px) and (max-width: 640px) {
   #drum-machine {
     margin: 0%;
     -webkit-box-orient: vertical;
